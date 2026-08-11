@@ -1,0 +1,94 @@
+   0x4020e2:    push   rbp
+   0x4020e3:    mov    rbp,rsp
+   0x4020e6:    sub    rsp,0x20
+   0x4020ea:    mov    QWORD PTR [rbp-0x18],rdi
+   0x4020ee:    mov    rax,QWORD PTR fs:0x28
+   0x4020f7:    mov    QWORD PTR [rbp-0x8],rax
+   0x4020fb:    xor    eax,eax
+   0x4020fd:    mov    edi,0x404c28 # 'SYSTEM : We will start test 3'
+   0x402102:    call   0x400b3d
+   0x402107:    mov    edi,0x404c48
+   0x40210c:    call   0x400b3d
+   0x402111:    mov    edi,0x404c80
+   0x402116:    call   0x400b3d
+   0x40211b:    mov    edi,0x404cb4
+   0x402120:    call   0x400b3d
+   0x402125:    mov    edi,0x404cd0
+   0x40212a:    call   0x400b3d
+   0x40212f:    mov    edi,0x404d08
+   0x402134:    call   0x400b3d
+   0x402139:    mov    edi,0x404d80 # 3> He caused the revolt. Deprive his royal status and send him in'
+   0x40213e:    call   0x400b3d
+   0x402143:    lea    rax,[rbp-0xc]
+   0x402147:    mov    rsi,rax
+   0x40214a:    mov    edi,0x40394f
+   0x40214f:    mov    eax,0x0
+   0x402154:    call   0x4008d0 <__isoc99_scanf@plt>
+   0x402159:    mov    edi,0x403952 # 1Bh,'[H',1Bh,'[J'
+   0x40215e:    mov    eax,0x0
+   0x402163:    call   0x400870 <printf@plt>
+   0x402168:    mov    eax,DWORD PTR [rip+0x205012]        # 0x607180
+   0x40216e:    cmp    eax,0x1
+   0x402171:    jne    0x402187
+gef➤
+   0x402173:    mov    esi,0x0
+   0x402178:    mov    edi,0x404dd0 # 'King : Did you execute 3rd prince without my allow??'
+   0x40217d:    call   0x400b58
+   0x402182:    jmp    0x402256
+   0x402187:    mov    eax,DWORD PTR [rbp-0xc]
+   0x40218a:    cmp    eax,0x1
+   0x40218d:    jne    0x4021c9
+   0x40218f:    mov    eax,DWORD PTR [rip+0x204f67]        # 0x6070fc
+   0x402195:    mov    rdx,QWORD PTR [rbp-0x18]
+   0x402199:    mov    esi,eax
+   0x40219b:    mov    edi,0x40201f
+   0x4021a0:    call   0x400ab9
+   0x4021a5:    mov    r8d,0x0
+   0x4021ab:    mov    ecx,0x1
+   0x4021b0:    mov    edx,0x1
+   0x4021b5:    mov    esi,0x0
+   0x4021ba:    mov    edi,0x0
+   0x4021bf:    call   0x40201f
+   0x4021c4:    jmp    0x402256
+   0x4021c9:    mov    eax,DWORD PTR [rbp-0xc]
+   0x4021cc:    cmp    eax,0x2
+   0x4021cf:    jne    0x402208
+   0x4021d1:    mov    eax,DWORD PTR [rip+0x204f25]        # 0x6070fc
+   0x4021d7:    mov    rdx,QWORD PTR [rbp-0x18]
+   0x4021db:    mov    esi,eax
+   0x4021dd:    mov    edi,0x40201f
+   0x4021e2:    call   0x400ab9
+   0x4021e7:    mov    r8d,0x0
+   0x4021ed:    mov    ecx,0x0
+   0x4021f2:    mov    edx,0x2
+   0x4021f7:    mov    esi,0xffffffff
+   0x4021fc:    mov    edi,0x0
+gef➤
+   0x402201:    call   0x40201f
+   0x402206:    jmp    0x402256
+   0x402208:    mov    eax,DWORD PTR [rbp-0xc]
+   0x40220b:    cmp    eax,0x3
+   0x40220e:    jne    0x402247
+   0x402210:    mov    eax,DWORD PTR [rip+0x204ee6]        # 0x6070fc
+   0x402216:    mov    rdx,QWORD PTR [rbp-0x18]
+   0x40221a:    mov    esi,eax
+   0x40221c:    mov    edi,0x40201f
+   0x402221:    call   0x400ab9
+   0x402226:    mov    r8d,0x0
+   0x40222c:    mov    ecx,0x1
+   0x402231:    mov    edx,0x1
+   0x402236:    mov    esi,0xffffffff
+   0x40223b:    mov    edi,0x0
+   0x402240:    call   0x40201f
+   0x402245:    jmp    0x402256
+   0x402247:    mov    esi,0x0
+   0x40224c:    mov    edi,0x4039a3
+   0x402251:    call   0x400b58
+   0x402256:    nop
+   0x402257:    mov    rax,QWORD PTR [rbp-0x8]
+   0x40225b:    xor    rax,QWORD PTR fs:0x28
+   0x402264:    je     0x40226b
+   0x402266:    call   0x400850 <__stack_chk_fail@plt>
+   0x40226b:    leave
+   0x40226c:    ret
+

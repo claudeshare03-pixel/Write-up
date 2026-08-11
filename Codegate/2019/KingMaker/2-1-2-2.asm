@@ -1,0 +1,11 @@
+   0x40299b:    push   rbp
+   0x40299c:    mov    rbp,rsp
+   0x40299f:    sub    rsp,0x10
+   0x4029a3:    mov    QWORD PTR [rbp-0x8],rdi
+   0x4029a7:    mov    esi,0x0
+   0x4029ac:    mov    edi,0x405338
+   0x4029b1:    call   0x400b58
+   0x4029b6:    nop
+   0x4029b7:    leave
+   0x4029b8:    ret
+

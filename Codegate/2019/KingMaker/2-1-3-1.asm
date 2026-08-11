@@ -1,0 +1,21 @@
+   0x402a9f:    push   rbp
+   0x402aa0:    mov    rbp,rsp
+   0x402aa3:    sub    rsp,0x10
+   0x402aa7:    mov    QWORD PTR [rbp-0x8],rdi
+   0x402aab:    mov    edi,0x4053f8
+   0x402ab0:    call   0x400b3d
+   0x402ab5:    mov    eax,DWORD PTR [rip+0x204639]        # 0x6070f4
+   0x402abb:    mov    rdx,QWORD PTR [rbp-0x8]
+   0x402abf:    mov    esi,eax
+   0x402ac1:    mov    edi,0x40271c
+   0x402ac6:    call   0x400ab9
+   0x402acb:    mov    r8d,0x0
+   0x402ad1:    mov    ecx,0x0
+   0x402ad6:    mov    edx,0x0
+   0x402adb:    mov    esi,0x2
+   0x402ae0:    mov    edi,0x1
+   0x402ae5:    call   0x40271c
+   0x402aea:    nop
+   0x402aeb:    leave
+   0x402aec:    ret
+
